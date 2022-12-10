@@ -44,7 +44,7 @@ jobs:
           .
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v1.0.6
+      uses: actions/upload-pages-artifact@v1.0.6
       with:
         name: 'github-pages'
         path: ${{ runner.temp }}/artifact.tar
@@ -65,5 +65,5 @@ jobs:
     
     steps:
     - name: Deploy to Github Pages
-      uses: actions/deploy-pages@v1
+      uses: actions/deploy-pages@v1.2.3
       id: deployment
