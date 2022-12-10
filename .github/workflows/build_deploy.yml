@@ -10,7 +10,7 @@ on:
 
 
 jobs:
-  deploy-book:
+  build-book:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -28,10 +28,41 @@ jobs:
     - name: Build the book
       run: jb build .
 
-    - name: Deploy to Github Pages
-      uses: peaceiris/actions-gh-pages@v3.6.1
+    - name: Archive artifact
+      shell: sh
+      if: runner.os == 'Linux'
+      run: |
+        chmod -c -R +rX . | while read line; do
+          echo "::warning title=Invalid file permissions automatically fixed::$line"
+        done
+        tar \
+          --dereference --hard-dereference \
+          --directory "_build/html" \
+          -cvf "$RUNNER_TEMP/artifact.tar" \
+          --exclude=.git \
+          --exclude=.github \
+          .
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1.0.6
       with:
-        publish_branch: master
-        full_commit_message: ${{ github.event.head_commit.message }}
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: _build/html
+        name: 'github-pages'
+        path: ${{ runner.temp }}/artifact.tar
+        retention-days: "1"
+
+  deploy-pages:
+    needs: build-book
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    - name: Deploy to Github Pages
+      uses: actions/deploy-pages@v1
+      id: deployment
