@@ -62,7 +62,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     runs-on: ubuntu-latest
-
+    
+    steps:
     - name: Deploy to Github Pages
       uses: actions/deploy-pages@v1
       id: deployment
