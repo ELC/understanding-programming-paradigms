@@ -38,7 +38,7 @@ jobs:
         tar \
           --dereference --hard-dereference \
           --directory "_build/html" \
-          -cvf "$RUNNER_TEMP/artifact.tar" \
+          -cvf "artifact.tar" \
           --exclude=.git \
           --exclude=.github \
           .
@@ -47,7 +47,7 @@ jobs:
       uses: actions/upload-pages-artifact@v1.0.6
       with:
         name: 'github-pages'
-        path: ${{ runner.temp }}/artifact.tar
+        path: "artifact.tar"
         retention-days: "1"
 
   deploy-pages:
