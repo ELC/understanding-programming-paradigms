@@ -4,7 +4,7 @@ name: Build PDF of the Book
 
 on:
   push:
-    branches: source
+    branches: master
 
   workflow_dispatch:
   repository_dispatch:
