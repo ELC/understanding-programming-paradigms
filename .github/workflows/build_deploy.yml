@@ -28,26 +28,11 @@ jobs:
     - name: Build the book
       run: jb build .
 
-    - name: Archive artifact
-      shell: sh
-      if: runner.os == 'Linux'
-      run: |
-        chmod -c -R +rX . | while read line; do
-          echo "::warning title=Invalid file permissions automatically fixed::$line"
-        done
-        tar \
-          --dereference --hard-dereference \
-          --directory "_build/html" \
-          -cvf "artifact.tar" \
-          --exclude=.git \
-          --exclude=.github \
-          .
-
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1.0.6
       with:
         name: 'github-pages'
-        path: "artifact.tar"
+        path: "_build/html"
         retention-days: "1"
 
   deploy-pages:
