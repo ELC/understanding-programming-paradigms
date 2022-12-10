@@ -52,7 +52,7 @@ jobs:
       run: jb build . --builder pdflatex
 
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: Book PDF
         path: _build/latex/book.pdf
