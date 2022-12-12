@@ -7,6 +7,7 @@ name = "pypi"
 pydatalog = "*"
 reactivex = "*"
 pointfree = "*"
+goto-statement = {git = "https://github.com/tushar-deepsource/python-goto"}
 
 [dev-packages]
 black = "*"

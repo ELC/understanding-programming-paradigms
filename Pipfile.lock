@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "3fb0f77459ae09a9c2e5054aa770bfa85beea983f3cd1e60556f87e5a969586a"
+            "sha256": "0186ab47b55f74509f1f37400e9a754e6fe65009315342b7b220027230f46ac7"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,10 @@
         ]
     },
     "default": {
+        "goto-statement": {
+            "git": "https://github.com/tushar-deepsource/python-goto",
+            "ref": "51fa96fc30778427458c4e9fa9469b0f6f53f956"
+        },
         "pointfree": {
             "hashes": [
                 "sha256:a00342950336daae09a7d44b55671e1f401456c6a2b27872cd85675635d4ba44"
