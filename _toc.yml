@@ -6,15 +6,19 @@ options:
   numbered: 3
 
 parts:
-- caption: Test1
+- caption: General-Purpose
+  chapters:
+    - file: chapters/08_functional
+
+- caption: Application-Specific
+  chapters:
+    - file: chapters/04_logic
+    - file: chapters/05_reactive
+
+- caption: Niche
   chapters:
     - file: chapters/02_non-structured
-    - file: chapters/04_logic
-- caption: Test2
-  chapters:
-    - file: chapters/05_reactive
     - file: chapters/06_reflective
     - file: chapters/07_concatenative
-    - file: chapters/08_functional
     - file: chapters/09_lambda_calculus
     - file: chapters/10_branchless
