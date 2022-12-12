@@ -1,12 +1,20 @@
 format: jb-book
 
-root: chapters/00_how_to_use
+root: chapters/01_imperative
 
 options:
   numbered: 3
 
 parts:
-- caption: Markdown Cheat Sheet
+- caption: Test1
   chapters:
-    - file: chapters/01_markdown
-    - file: chapters/02_jupyter
+    - file: chapters/02_non-structured
+    - file: chapters/04_logic
+- caption: Test2
+  chapters:
+    - file: chapters/05_reactive
+    - file: chapters/06_reflective
+    - file: chapters/07_concatenative
+    - file: chapters/08_functional
+    - file: chapters/09_lambda_calculus
+    - file: chapters/10_branchless
