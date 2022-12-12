@@ -25,8 +25,9 @@ jobs:
 
     - name: Install Python dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install wheel
+        pip install --upgrade pip
+        pip install pipenv
+        pipenv install --dev
         pushd .
         cd ..
         git clone https://github.com/executablebooks/jupyter-book.git
