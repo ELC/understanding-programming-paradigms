@@ -13,6 +13,7 @@ goto-statement = {git = "https://github.com/tushar-deepsource/python-goto"}
 black = "*"
 wheel = "*"
 jupyter-book = "*"
+pexpect = "*"
 
 [requires]
 python_version = "3.10"
