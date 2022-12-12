@@ -8,6 +8,7 @@ options:
 parts:
 - caption: General-Purpose
   chapters:
+    - file: chapters/03_object_oriented
     - file: chapters/08_functional
 
 - caption: Application-Specific
