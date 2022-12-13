@@ -1,25 +1,33 @@
 format: jb-book
 
-root: chapters/01_imperative
+root: chapters/00_how_to_use
 
 options:
   numbered: 3
 
 parts:
-- caption: General-Purpose
+- caption: Imperative (Structured)
   chapters:
+    - file: chapters/01_procedural
     - file: chapters/03_object_oriented
-    - file: chapters/08_functional
 
-- caption: Application-Specific
+- caption: Concurrent
   chapters:
-    - file: chapters/04_logic
-    - file: chapters/05_reactive
+    - file: chapters/11_actor_model
 
-- caption: Niche
+- caption: Non-structured
   chapters:
     - file: chapters/02_non-structured
-    - file: chapters/06_reflective
+
+- caption: Declarative
+  chapters:
+    - file: chapters/04_logic
+    - file: chapters/08_functional
+    - file: chapters/05_reactive
     - file: chapters/07_concatenative
     - file: chapters/09_lambda_calculus
     - file: chapters/10_branchless
+
+- caption: Metaprogramming
+  chapters:
+    - file: chapters/06_reflective
