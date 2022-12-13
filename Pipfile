@@ -8,6 +8,7 @@ pydatalog = "*"
 reactivex = "*"
 pointfree = "*"
 goto-statement = {git = "https://github.com/tushar-deepsource/python-goto"}
+pykka = "*"
 
 [dev-packages]
 black = "*"

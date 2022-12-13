@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "979d0348045129984768420e65a77c2d23d192bd68af95f0f7fd2a16cfc50b45"
+            "sha256": "f48f73f13d4ed220758db48ec68d4182d8a6993ab3859d2f3a63479e94bacd64"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -68,6 +68,14 @@
             "index": "pypi",
             "version": "==0.17.4"
         },
+        "pykka": {
+            "hashes": [
+                "sha256:14ce223a55e6d62de6657f9b2b129e6ac785f731eccc5e26059e5254beca3cfb",
+                "sha256:d00de35f719afeedf8d362854d99cee6ed257663bbf7e4789344b77b73d55f28"
+            ],
+            "index": "pypi",
+            "version": "==3.1.1"
+        },
         "reactivex": {
             "hashes": [
                 "sha256:0004796c420bd9e68aad8e65627d85a8e13f293de76656165dffbcb3a0e3fb6a",
@@ -81,7 +89,7 @@
                 "sha256:1511434bb92bf8dd198c12b1cc812e800d4181cfcb867674e0f8279cc93087aa",
                 "sha256:16fa4864408f655d35ec496218b85f79b3437c829e93320c7c9215ccfd92489e"
             ],
-            "markers": "python_version >= '3.7'",
+            "markers": "python_full_version >= '3.7.0'",
             "version": "==4.4.0"
         }
     },
@@ -1526,11 +1534,11 @@
         },
         "traitlets": {
             "hashes": [
-                "sha256:61832ea7b7f910f5745e27e9bb269a181fd15af76027d99560299209d5b17c94",
-                "sha256:bd0fca5c890a09bf66b33cce67ca14156b080429bc39c7ef26b075a4bd4f9fc3"
+                "sha256:57ba2ba951632eeab9388fa45f342a5402060a5cc9f0bb942f760fafb6641581",
+                "sha256:fde8f62c05204ead43c2c1b9389cfc85befa7f54acb5da28529d671175bb4108"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==5.7.0"
+            "version": "==5.7.1"
         },
         "uc-micro-py": {
             "hashes": [
