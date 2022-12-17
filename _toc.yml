@@ -15,6 +15,7 @@ parts:
 - caption: Concurrent
   chapters:
     - file: chapters/11_actor_model
+    - file: chapters/14_cooperative
 
 - caption: Non-structured
   chapters:
