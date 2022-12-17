@@ -10,6 +10,7 @@ parts:
   chapters:
     - file: chapters/01_procedural
     - file: chapters/03_object_oriented
+    - file: chapters/12_data_oriented
 
 - caption: Concurrent
   chapters:
