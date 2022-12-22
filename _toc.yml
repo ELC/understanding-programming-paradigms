@@ -20,6 +20,7 @@ parts:
 - caption: Non-structured
   chapters:
     - file: chapters/02_non-structured
+    - file: chapters/17_continuation_passing
 
 - caption: Declarative
   chapters:
