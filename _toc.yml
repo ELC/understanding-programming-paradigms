@@ -34,3 +34,4 @@ parts:
 - caption: Metaprogramming
   chapters:
     - file: chapters/06_reflective
+    - file: chapters/14_symbolic

@@ -11,6 +11,9 @@ goto-statement = {git = "https://github.com/tushar-deepsource/python-goto"}
 pykka = "*"
 toolz = "*"
 pyrsistent = "*"
+sympy = "*"
+pymc = "*"
+gevent = "*"
 
 [dev-packages]
 black = "*"
