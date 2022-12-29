@@ -22,14 +22,12 @@ parts:
     - file: chapters/02_non-structured
     - file: chapters/17_continuation_passing
 
-
 - caption: Mathematical
   chapters:
     - file: chapters/04_logic
     - file: chapters/09_lambda_calculus
     - file: chapters/15_probabilistic
     - file: chapters/20_differentiable
-
 
 - caption: Declarative
   chapters:
