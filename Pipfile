@@ -16,6 +16,8 @@ pymc = "*"
 gevent = "*"
 autograd = "*"
 numpy = "*"
+perfplot = "*"
+seaborn = "*"
 
 [dev-packages]
 black = "*"
