@@ -18,6 +18,7 @@ autograd = "*"
 numpy = "*"
 perfplot = "*"
 seaborn = "*"
+automata-lib = "*"
 
 [dev-packages]
 black = "*"

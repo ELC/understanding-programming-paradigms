@@ -29,6 +29,7 @@ parts:
     - file: chapters/16_array
     - file: chapters/15_probabilistic
     - file: chapters/20_differentiable
+    - file: chapters/13_automata_based
 
 - caption: Declarative
   chapters:
